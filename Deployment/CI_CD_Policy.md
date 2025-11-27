@@ -2,7 +2,7 @@
 
 1.  **Purpose**
   
-    To define the guidelines for using CI/CD across UKSRC projects. The aim is to enable quality-ensuring Zrocesses to ensure reliable and measurable deployments.
+    To define the guidelines for using CI/CD across UKSRC projects. The aim is to enable quality-ensuring processes to enable reliable and measurable deployments.
 
 
 2.  **Scope**
@@ -108,6 +108,6 @@ Integration testing -- See Ben Green's document regarding Playwright
 
 **Notes:**
 
-Snapshots for manual non-CD releases, only to be uploaded to our nexus
+Snapshots for manual non-CD releases, only to be uploaded to our nexus repository
 due to maven repository expiration. <https://repo.dev.uksrc.org/>
 (credentials -- see Redmine)
