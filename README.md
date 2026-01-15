@@ -4,9 +4,9 @@ This repository contains the technical policies, processes, and guidelines used 
 
 ### Contents
 
-- CI/CD policies
+- [CI/CD policies](Deployment/CI_CD_Policy.md)
 
-- Engineering and coding standards
+- [Engineering and coding standards](Development/Collaboration.md)
 
 - Operational procedures
 
