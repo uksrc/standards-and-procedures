@@ -10,6 +10,10 @@ repository and be in a position to make meaningful contributions with minimal ef
 The team should use the [jira](https://uksrc.atlassian.net/jira/software/projects/TRD/summary) to plan work - work is based on creating "features" which might be of variable size, but should be small enough to be completed in a reasonable time frame (e.g. a couple of weeks).
 The feature will be implemented in a single branch and PR, by a single individual. No attempt will be made to split the feature into multiple tasks at planning time, but if whilst implementing the feature it becomes clear that there is more work than expected, then the feature can be split into multiple features in the jira and the branch can be split into multiple branches as necessary. The aim is to keep the planning process as simple as possible, and to avoid the "over-planning" that can occur when trying to split work into too many small tasks at planning time.
 
+This means that planning for a feature is recorded in Jira, and the implementation of the feature is recorded in the git commit history and the PR description. This allows for a clear separation of concerns between planning and implementation, and allows for a more flexible and agile approach to development. It is still permissible to create "issues" in github for noting a problem or a bug, but these should be linked to the relevant feature in the jira, and the implementation of the fix should be recorded in the git commit history and the PR description as well.
+
+In the spirit of being agile, any team member is free to create a feature in jira and start working on it, without needing to wait for a formal PI planning meeting - though it should be discussed at a normal standup. This allows for a more flexible and responsive approach to development, and allows for the team to respond quickly to changing requirements or priorities - though it is still expected that the team will have regular PI planning meetings to plan work for the next PI, and to review the work that was done in the previous PI.
+
 
 ## Git repository 
 
