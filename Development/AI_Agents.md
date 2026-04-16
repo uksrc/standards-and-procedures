@@ -1,7 +1,9 @@
 Working with AI Agents
 ======================
 
-working with AI agents can be a powerful way to accelerate development, but it is important to use them in a way that is effective and efficient. Here are some tips for working with AI agents:
+working with AI agents can be a powerful way to accelerate development, but it is important to use them in a way that is effective and efficient. 
+
+Although by their nature it is hard to come up with any hard and fast rules about what will always work, here are some tips for working with AI agents:
 
 
 * Ask the agent to create a plan for how to solve the problem. This can help you to understand the agent's thought process and to identify any potential issues with the solution.
