@@ -22,3 +22,8 @@ Although by their nature it is hard to come up with any hard and fast rules abou
 * The can get stuck in a sort of doom loop where they cannot figure out how to simultaneously make two tests pass, breaking the other each time they make one pass. In this case it can be helpful to ask the agent to focus on making one test pass at a time, rather than trying to make both tests pass simultaneously. 
   * It is worth monitoring the agent's progress and intervening if it seems to be getting stuck in a loop. 
   * This sort of doom loop with tests can be an indication that there is something wrong with the tests of course.
+
+## Keep things concise
+
+Because AI makes it easy to generate large amounts of text, it is important to try to keep code, documentation etc. concise and to the point. This can help to ensure that the code is easy to read and understand for humans, and that it is not cluttered with unnecessary information. 
+We don't want to get the situation where only AI is capable of understanding the codebase because it is so verbose and full of "noise".
