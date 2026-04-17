@@ -8,6 +8,8 @@ This repository contains the technical policies, processes, and guidelines used 
 
 - [Engineering and coding standards](Development/Collaboration.md)
 
+- [AI coding agents usage guidelines](./Development/AI_Agents.md)
+
 - Operational procedures
 
 - Governance and review processes
