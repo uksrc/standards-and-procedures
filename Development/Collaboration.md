@@ -18,12 +18,13 @@ This means that planning for a feature is recorded in Jira, and the implementati
 In the spirit of being agile, any team member is free to create a feature in jira and start working on it, without needing to wait for a formal PI planning meeting - though it should be discussed at a normal standup. This allows for a more flexible and responsive approach to development, and allows for the team to respond quickly to changing requirements or priorities - though it is still expected that the team will have regular PI planning meetings to plan work for the next PI, and to review the work that was done in the previous PI.
 
 ### Jira Feature Creation expectations
-* https://uksrc.atlassian.net/jira/software/projects/TRD/boards/632/timeline
-   * The feature should be created in the relevant epic from the timeline view - this can be done by pressing "+" when hovering over the relevant epic in the timeline view. This ensures that the feature is automatically linked to the epic.
+* https://uksrc.atlassian.net/jira/software/projects/TRD/boards/632
+    * The feature should be created in the relevant epic from the Kanban view - this can be done by pressing "+ Create" at the end of the relevant epic group.
 * The feature should have a clear and concise title that describes the work to be done
+* The feature should have an estimate ot the amount of time that it is expected to take to complete the feature in "real" workdays.
 * The feature should have a clear and concise description that gives an overview of the work to be done, and any relevant context or background information
 * The feature should have a clear definition of done that describes what needs to be done for the feature to be considered complete.
-* The feature should have an estimate ot the amount of time that it is expected to take to complete the feature in "real" workdays.
+
 
 ### Starting work on a feature
 * The feature should be transitioned to "in progress".
@@ -32,21 +33,29 @@ In the spirit of being agile, any team member is free to create a feature in jir
 * The branch should be pushed "regularly" to github, so that the work is visible to others and so that it is backed up in case of any local data loss failures. This also allows for early feedback from others if they are interested in the work being done.
 * The jira feature ticket should be updated at least once a week on Monday to give an update on the progress of the work - this need only be a brief update.
 
+### General expectations for developer workload
+
+* You should have at least one feature in progress at any one time
+* You may have more than one feature in progress at any one time, but you should not have more than 2 features in progress at any one time. 
+* If you need to stop working on a feature for any reason (e.g. waiting for feedback, waiting for a dependency to be completed,  or you just need change and want to concentrate on one of your other features) then you should transition the feature to "suspended". 
+This allows for a more accurate view of the work that is in progress, and allows for better planning and prioritisation of work. 
+
+
 ## Git repository 
 
 * On cloning a project it should be buildable with a simple command line
-  * **Java** - [gradle](https://docs.gradle.org/current/userguide/getting_started.html) should be used as the build tool - note use [kotlin](https://docs.gradle.org/current/userguide/kotlin_dsl.html) control files for type safety rather than groovy.
-  * **Python** TBD
-  * **Other** use make to "build" - in particular use [GNU make](https://www.gnu.org/software/make/manual/make.html)
+    * **Java** - [gradle](https://docs.gradle.org/current/userguide/getting_started.html) should be used as the build tool - note use [kotlin](https://docs.gradle.org/current/userguide/kotlin_dsl.html) control files for type safety rather than groovy.
+    * **Python** TBD
+    * **Other** use make to "build" - in particular use [GNU make](https://www.gnu.org/software/make/manual/make.html)
 * Projects should contain appropriate unit tests
 * Projects should have CI set up to run these tests on PR - using ubuntu as the starting OS.
 * The project README should give a brief overview of
-  * overall purpose
-  * how to start coding
+    * overall purpose
+    * how to start coding
 * Contributions to the code should be done on a feature branch with is created along with the jira feature ticket as detailed above.
-  * Once the work is ready for integration the draft PR should be changed to a "full" PR.
-  * Run a copilot review on the PR to check for any potential issues with the code - this is not a replacement for a human review, but can be a useful tool to catch any potential issues that might have been missed.
-  * A human should review the PR also before it is merged.
+    * Once the work is ready for integration the draft PR should be changed to a "full" PR.
+    * Run a copilot review on the PR to check for any potential issues with the code - this is not a replacement for a human review, but can be a useful tool to tidy up before the human review.
+    * A human should review the PR also before it is merged.
   
 * Repositories should not contain "blog"-style work records of work that was done - this should be in the commit history and the PR description. The commit history should be clean and meaningful, so that it is possible to understand what was done by reading the commit messages and the PR description. Diffs will then only contain the actual code changes and not the "noise" of the "blog" process.
 
